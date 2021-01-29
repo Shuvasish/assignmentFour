@@ -102,6 +102,7 @@ submit.addEventListener('click',function(e){
     if(ecoValue.value > 0 || firValue.value > 0){
         target.style.display = 'none';  
         confirmation.insertAdjacentHTML('afterbegin',`<h4>Thank You, Mr.X!</h4><h4>For choosing us and being so awesome all at once. </h4><h3>Your Total bill is $${totalUI.textContent}.</h3><h4>You can collect additional information from nearest counter.</h4>`);
+        document.querySelector('body').classList.add('.fixer');
     }
     
 });
